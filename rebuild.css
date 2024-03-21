@@ -1,0 +1,104 @@
+.description-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.project-header {
+    font-weight: 700;
+    font-size: 2.7vh;
+}
+
+.project-category {
+    margin-bottom: 2vh;
+}
+
+.project-description {
+    margin-bottom: 2vh;
+}
+
+.project-lead {
+
+}
+
+.thumbnail {
+    width: 100%;
+    /* height should keep the 16:9 ratio; */
+    height: calc(55vw * 9 / 16);
+    /* background-color: aliceblue; */
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+    height: calc(38vh - 10px);
+    /* background-color: aqua; */
+}
+
+.image-3 {
+    width: 33.3%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+
+.image-2 {
+    width: 50%;
+    height: 100%;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail-video {
+    width: 100%;
+    height: calc(55vw * 9 / 16);
+    background-color: aliceblue;
+}
+
+.img {
+    /*make picture fill in the div without stretching it when adjusting the window */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.normal-video {
+    height: 100%;
+}
+
+.normal-video-2 {
+    width: 100%;
+}
+
+@media (max-width: 750px) {
+    .thumbnail-video {
+        height: calc(100vw * 9 / 16);
+    }
+
+    .thumbnail {
+        height: calc(100vw * 9 / 16);
+    }
+
+    .image-row {
+        flex-direction: column;
+        height: fit-content;
+        width: 100%;
+     }
+ 
+     .image-2 {
+         width: 100%;
+         height: fit-content;
+     }
+
+     .image-3 {
+        width: 100%;
+        height: fit-content;
+    }
+
+     .normal-video {
+         width: 100%;
+     }
+}
